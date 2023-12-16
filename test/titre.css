@@ -1,0 +1,75 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #be2626;
+}
+
+svg path:nth-child(1){
+    stroke-dasharray: 346.38580322265625;
+    stroke-dashoffset: 346.38580322265625;
+    animation: animationLetter 2s linear forwards;
+}
+svg path:nth-child(2){
+    stroke-dasharray: 200.31649780273438;
+    stroke-dashoffset: 200.31649780273438;
+    animation: animationLetter 2s linear forwards 2s;
+}
+svg line:nth-child(3){
+    stroke-dasharray: 85.32877349853516;
+    stroke-dashoffset: 85.32877349853516;
+    animation: animationLetter 2s linear forwards 4s;
+}
+svg path:nth-child(4){
+    stroke-dasharray: 138.533447265625;
+    stroke-dashoffset: 138.533447265625;
+    animation: animationLetter 2s linear forwards 6s;
+}
+svg path:nth-child(5){
+    stroke-dasharray: 250.37693786621094;
+    stroke-dashoffset: 250.37693786621094;
+    animation: animationLetter 2s linear forwards 8s;
+}
+svg line:nth-child(6){
+    stroke-dasharray: 65.1150894165039;
+    stroke-dashoffset: 65.1150894165039;
+    animation: animationLetter 2s linear forwards 10s;
+}
+svg path:nth-child(7){
+    stroke-dasharray: 15.499421119689941;
+    stroke-dashoffset: 15.499421119689941;
+    animation: animationLetter 2s linear forwards 12s;
+}
+svg path:nth-child(8){
+    stroke-dasharray: 349.8965759277344;
+    stroke-dashoffset: 349.8965759277344;
+    animation: animationLetter 2s linear forwards 14s;
+}
+svg path:nth-child(9){
+    stroke-dasharray: 100.46404266357422;
+    stroke-dashoffset: 100.46404266357422;
+    animation: animationLetter 2s linear forwards 16s;
+}
+svg path:nth-child(10){
+    stroke-dasharray: 107.8039779663086;
+    stroke-dashoffset: 107.8039779663086;
+    animation: animationLetter 2s linear forwards 18s;
+}
+svg path:nth-child(11){
+    stroke-dasharray: 90.35833740234375;
+    stroke-dashoffset: 90.35833740234375;
+    animation: animationLetter 2s linear forwards 20s;
+}
+svg path:nth-child(12){
+    stroke-dasharray: 77.29322052001953;
+    stroke-dashoffset: 77.29322052001953;
+    animation: animationLetter 2s linear forwards 22s;
+}
+
+@keyframes animationLetter {
+    to {
+        stroke-dashoffset: 0;
+    }
+}

@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+p {
+    font-size: 50px;
+    font-family: 'Press Start 2P', cursive;
+}
+
+#textPrincipal {
+    font-family: 'Press Start 2P', cursive;
+}
+
+#traitUnion {
+    position: relative;
+    left: -5px;
+    bottom: 9px;
+    font-weight: bold;
+}
+
+div {
+    margin-top: 2000px;
+}
+
+@keyframes cursor {
+    50% { color: transparent }
+}

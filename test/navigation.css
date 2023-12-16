@@ -1,0 +1,14 @@
+div {
+    width: fit-content;
+    border: solid 1px;
+    font-size: 100px;
+    transform: perspective(1000px) rotateY(-40deg);
+    transform-origin: 100% 50%;
+    transition: transform 1000ms;
+}
+
+div:hover {
+    transform: perspective(1000px) rotateY(0deg);
+    transform-origin: 100% 50%;
+    transition: transform 1000ms;
+}
