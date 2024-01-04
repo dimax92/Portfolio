@@ -1,8 +1,12 @@
 import React, { useRef, useEffect } from 'react';
 import * as THREE from 'three';
+import { useDispatch, useSelector } from "react-redux"
 
 const ThreeScene = () => {
   const canvasRef = useRef();
+  const dispatch = useDispatch();
+  const canvasHeight = useSelector((state) => state.canvasHeight);
+  const canvasWidth = useSelector((state) => state.canvasWidth);
 
   useEffect(() => {
     // Code Three.js ici
@@ -20,13 +24,13 @@ const ThreeScene = () => {
 
     // Créer le renderer
     const renderer = new THREE.WebGLRenderer({ canvas });
-    renderer.setSize(window.innerWidth, window.innerHeight);
+    // renderer.setSize(window.innerWidth, window.innerHeight);
 
     // Ajouter un cube à la scène avec un shader personnalisé
     const geometry = new THREE.PlaneGeometry(canvas.clientWidth, canvas.clientHeight);
     const material = new THREE.ShaderMaterial({
         uniforms: {
-            u_resolution: { value: new THREE.Vector2(window.innerWidth, window.innerHeight) },
+            u_resolution: { value: new THREE.Vector2(canvas.clientWidth, canvas.clientHeight) },
             u_mouse: { value: new THREE.Vector2(0, 0) },
             u_time: { value: 0.0 },
           },
@@ -75,7 +79,7 @@ const ThreeScene = () => {
     };
 
     animate();*/
-
+    dispatch({type: 'SET_CANVAS_HEIGHT', payload: parseInt(canvas.clientHeight)})
     return () => {
       // Nettoyer les ressources Three.js lors du démontage du composant
       renderer.dispose();
@@ -83,8 +87,9 @@ const ThreeScene = () => {
       geometry.dispose();
     };
   }, []);
+  
 
-  return <canvas ref={canvasRef} />;
+  return <canvas ref={canvasRef} style={{height: "123vh", width: "100%", position: "fixed"}}/>;
 };
 
 export default ThreeScene;

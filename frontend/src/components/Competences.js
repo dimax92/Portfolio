@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 import * as THREE from 'three';
 import firstPictureLink from './images/CSS.png';
 import secondPictureLink from './images/HTML5.png';
@@ -10,19 +10,47 @@ import sevenPictureLink from './images/React.png';
 import brickPictureLink from './images/Brick.png';
 
 
-const Competences = () => {
+const CylindreCompetences = () => {
+  const canvasRef = useRef();
+
+  function resizeCanvas(renderer){
+    let canvasHeight = window.innerWidth;
+    let canvasWidth = window.innerWidth;
+    if(window.innerWidth > 700){
+      if(canvasHeight > window.innerHeight*0.67){
+        canvasHeight = window.innerHeight*0.67;
+      }
+      if(canvasWidth > window.innerHeight*0.67){
+        canvasWidth = window.innerHeight*0.67;
+      }
+    }else{
+      if(canvasHeight > window.innerHeight*0.95){
+        canvasHeight = window.innerHeight*0.95;
+      }
+      if(canvasWidth > window.innerHeight*0.95){
+        canvasWidth = window.innerHeight*0.95;
+      }
+    }
+    renderer.setSize(canvasWidth, canvasHeight);
+  }
   useEffect(() => {
     // Créez une scène
+    const canvas = canvasRef.current;
     const scene = new THREE.Scene();
 
     // Créez une caméra
-    const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
-    camera.position.z = 5;
+    const camera = new THREE.PerspectiveCamera(75, canvas.clientWidth / canvas.clientHeight, 0.1, 1000);
+    camera.position.z = 4;
 
     // Créez un moteur de rendu
-    const renderer = new THREE.WebGLRenderer();
-    renderer.setSize(window.innerWidth, window.innerHeight);
-    document.body.appendChild(renderer.domElement);
+    const renderer = new THREE.WebGLRenderer({canvas});
+    renderer.setClearColor(0x000000, 0);
+    resizeCanvas(renderer)
+    window.addEventListener('resize', ()=>{
+      resizeCanvas(renderer)
+    });
+    // document.body.appendChild(renderer.domElement);
+    // renderer.setPixelRatio(window.devicePixelRatio);
 
     const light = new THREE.DirectionalLight( 0xffffff, 0.5 );
     //const light = new THREE.SpotLight(0xffffff);
@@ -370,7 +398,10 @@ geometry.computeVertexNormals();
     };
   }, []);
 
-  return <div></div>; // Un conteneur vide pour le rendu Three.js
+  return <canvas ref={canvasRef} style={{
+    backgroundColor: "rgba(255, 0, 0, 0)",
+    position: "relative"
+  }}/>; // Un conteneur vide pour le rendu Three.js
 };
 
-export default Competences;
+export default CylindreCompetences;

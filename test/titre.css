@@ -7,69 +7,263 @@ body {
     background-color: #be2626;
 }
 
-svg path:nth-child(1){
-    stroke-dasharray: 346.38580322265625;
-    stroke-dashoffset: 346.38580322265625;
+/*svg path:nth-child(1){
+    stroke-dasharray: 150.30014038085938;
+    stroke-dashoffset: 150.30014038085938;
     animation: animationLetter 2s linear forwards;
 }
 svg path:nth-child(2){
-    stroke-dasharray: 200.31649780273438;
-    stroke-dashoffset: 200.31649780273438;
+    stroke-dasharray: 94.1837158203125;
+    stroke-dashoffset: 94.1837158203125;
     animation: animationLetter 2s linear forwards 2s;
 }
-svg line:nth-child(3){
-    stroke-dasharray: 85.32877349853516;
-    stroke-dashoffset: 85.32877349853516;
+svg path:nth-child(3){
+    stroke-dasharray: 116.27928924560547;
+    stroke-dashoffset: 116.27928924560547;
     animation: animationLetter 2s linear forwards 4s;
 }
 svg path:nth-child(4){
-    stroke-dasharray: 138.533447265625;
-    stroke-dashoffset: 138.533447265625;
+    stroke-dasharray: 114.95645141601562;
+    stroke-dashoffset: 114.95645141601562;
     animation: animationLetter 2s linear forwards 6s;
 }
 svg path:nth-child(5){
-    stroke-dasharray: 250.37693786621094;
-    stroke-dashoffset: 250.37693786621094;
+    stroke-dasharray: 30.272701263427734;
+    stroke-dashoffset: 30.272701263427734;
     animation: animationLetter 2s linear forwards 8s;
 }
-svg line:nth-child(6){
-    stroke-dasharray: 65.1150894165039;
-    stroke-dashoffset: 65.1150894165039;
-    animation: animationLetter 2s linear forwards 10s;
+svg path:nth-child(6){
+    stroke-dasharray: 28.242773056030273;
+    stroke-dashoffset: 28.242773056030273;
+    visibility: hidden;
+    animation: animationPoint 2s linear forwards 10s;
 }
 svg path:nth-child(7){
-    stroke-dasharray: 15.499421119689941;
-    stroke-dashoffset: 15.499421119689941;
+    stroke-dasharray: 155.21774291992188;
+    stroke-dashoffset: 155.21774291992188;
     animation: animationLetter 2s linear forwards 12s;
 }
 svg path:nth-child(8){
-    stroke-dasharray: 349.8965759277344;
-    stroke-dashoffset: 349.8965759277344;
+    stroke-dasharray: 99.38442993164062;
+    stroke-dashoffset: 99.38442993164062;
     animation: animationLetter 2s linear forwards 14s;
 }
 svg path:nth-child(9){
-    stroke-dasharray: 100.46404266357422;
-    stroke-dashoffset: 100.46404266357422;
+    stroke-dasharray: 39.00605010986328;
+    stroke-dashoffset: 39.00605010986328;
     animation: animationLetter 2s linear forwards 16s;
 }
 svg path:nth-child(10){
-    stroke-dasharray: 107.8039779663086;
-    stroke-dashoffset: 107.8039779663086;
+    stroke-dasharray: 38.71046447753906;
+    stroke-dashoffset: 38.71046447753906;
+    animation: animationLetter 2s linear forwards 18s;
+}*/
+
+
+
+
+/*svg path:nth-child(1){
+    stroke-dasharray: 93.63868713378906;
+    stroke-dashoffset: 93.63868713378906;
+    animation: animationLetter 2s linear forwards;
+}
+svg path:nth-child(2){
+    stroke-dasharray: 80.55724334716797;
+    stroke-dashoffset: 80.55724334716797;
+    animation: animationLetter 2s linear forwards 2s;
+}
+svg path:nth-child(3){
+    stroke-dasharray: 155.2186737060547;
+    stroke-dashoffset: 155.2186737060547;
+    animation: animationLetter 2s linear forwards 4s;
+}
+svg path:nth-child(4){
+    stroke-dasharray: 43.37209701538086;
+    stroke-dashoffset: 43.37209701538086;
+    animation: animationLetter 2s linear forwards 6s;
+}
+svg path:nth-child(5){
+    stroke-dasharray: 65.03532409667969;
+    stroke-dashoffset: 65.03532409667969;
+    animation: animationLetter 2s linear forwards 8s;
+}
+svg path:nth-child(6){
+    stroke-dasharray: 94.32595825195312;
+    stroke-dashoffset: 94.32595825195312;
+    animation: animationLetter 2s linear forwards 10s;
+}
+svg path:nth-child(7){
+    stroke-dasharray: 8.382169723510742;
+    stroke-dashoffset: 8.382169723510742;
+    animation: animationLetter 2s linear forwards 12s;
+}
+svg path:nth-child(8){
+    stroke-dasharray: 38.04942321777344;
+    stroke-dashoffset: 38.04942321777344;
+    animation: animationLetter 2s linear forwards 14s;
+}
+svg path:nth-child(9){
+    stroke-dasharray: 14.794998168945312;
+    stroke-dashoffset: 14.794998168945312;
+    animation: animationLetter 2s linear forwards 16s;
+}
+svg path:nth-child(10){
+    stroke-dasharray: 94.32579803466797;
+    stroke-dashoffset: 94.32579803466797;
     animation: animationLetter 2s linear forwards 18s;
 }
 svg path:nth-child(11){
-    stroke-dasharray: 90.35833740234375;
-    stroke-dashoffset: 90.35833740234375;
+    stroke-dasharray: 94.10459899902344;
+    stroke-dashoffset: 94.10459899902344;
     animation: animationLetter 2s linear forwards 20s;
 }
 svg path:nth-child(12){
-    stroke-dasharray: 77.29322052001953;
-    stroke-dashoffset: 77.29322052001953;
+    stroke-dasharray: 68.77240753173828;
+    stroke-dashoffset: 68.77240753173828;
     animation: animationLetter 2s linear forwards 22s;
 }
+svg path:nth-child(13){
+    stroke-dasharray: 94.32584381103516;
+    stroke-dashoffset: 94.32584381103516;
+    animation: animationLetter 2s linear forwards 24s;
+}
+svg path:nth-child(14){
+    stroke-dasharray: 68.96041870117188;
+    stroke-dashoffset: 68.96041870117188;
+    animation: animationLetter 2s linear forwards 26s;
+}*/
+
+
+svg path:nth-child(1){
+    stroke-dasharray: 90.11724090576172;
+    stroke-dashoffset: 90.11724090576172;
+    animation: animationLetter 2s linear forwards;
+}
+svg path:nth-child(2){
+    stroke-dasharray: 18.81300163269043;
+    stroke-dashoffset: 18.81300163269043;
+    animation: animationLetter 2s linear forwards 2s;
+}
+svg path:nth-child(3){
+    stroke-dasharray: 94.18374633789062;
+    stroke-dashoffset: 94.18374633789062;
+    animation: animationLetter 2s linear forwards 4s;
+}
+svg path:nth-child(4){
+    stroke-dasharray: 8.381768226623535;
+    stroke-dashoffset: 8.381768226623535;
+    animation: animationLetter 2s linear forwards 6s;
+}
+svg path:nth-child(5){
+    stroke-dasharray: 99.38385009765625;
+    stroke-dashoffset: 99.38385009765625;
+    animation: animationLetter 2s linear forwards 8s;
+}
+svg path:nth-child(6){
+    stroke-dasharray: 39.36363983154297;
+    stroke-dashoffset: 39.36363983154297;
+    animation: animationLetter 2s linear forwards 10s;
+}
+svg path:nth-child(7){
+    stroke-dasharray: 30.272701263427734;
+    stroke-dashoffset: 30.272701263427734;
+    animation: animationLetter 2s linear forwards 12s;
+}
+svg path:nth-child(8){
+    stroke-dasharray: 28.24266815185547;
+    stroke-dashoffset: 28.24266815185547;
+    visibility: hidden;
+    animation: animationPoint 2s linear forwards 14s;
+}
+svg path:nth-child(9){
+    stroke-dasharray: 68.96022033691406;
+    stroke-dashoffset: 68.96022033691406;
+    animation: animationLetter 2s linear forwards 16s;
+}
+svg path:nth-child(10){
+    stroke-dasharray: 99.38439178466797;
+    stroke-dashoffset: 99.38439178466797;
+    animation: animationLetter 2s linear forwards 18s;
+}
+svg path:nth-child(11){
+    stroke-dasharray: 38.04941177368164;
+    stroke-dashoffset: 38.04941177368164;
+    animation: animationLetter 2s linear forwards 20s;
+}
+svg path:nth-child(12){
+    stroke-dasharray: 14.794998168945312;
+    stroke-dashoffset: 14.794998168945312;
+    animation: animationLetter 2s linear forwards 22s;
+}
+svg path:nth-child(13){
+    stroke-dasharray: 30.2726993560791;
+    stroke-dashoffset: 30.2726993560791;
+    animation: animationLetter 2s linear forwards 24s;
+}
+svg path:nth-child(14){
+    stroke-dasharray: 28.242813110351562;
+    stroke-dashoffset: 28.242813110351562;
+    visibility: hidden;
+    animation: animationPoint 2s linear forwards 26s;
+}
+svg path:nth-child(15){
+    stroke-dasharray: 80.55723571777344;
+    stroke-dashoffset: 80.55723571777344;
+    animation: animationLetter 2s linear forwards 28s;
+}
+svg path:nth-child(16){
+    stroke-dasharray: 94.1046142578125;
+    stroke-dashoffset: 94.1046142578125;
+    animation: animationLetter 2s linear forwards 30s;
+}
+svg path:nth-child(17){
+    stroke-dasharray: 68.96040344238281;
+    stroke-dashoffset: 68.96040344238281;
+    animation: animationLetter 2s linear forwards 32s;
+}
+
+
+
+/*svg path:nth-child(2){
+    stroke-dasharray: 114.95626831054688;
+    stroke-dashoffset: 114.95626831054688;
+    animation: animationLetter 1.14s linear forwards;
+}
+svg path:nth-child(3){
+    stroke-dasharray: 94.1836929321289;
+    stroke-dashoffset: 94.1836929321289;
+    animation: animationLetter 0.94s linear forwards 1.14s;
+}
+svg path:nth-child(1){
+    stroke-dasharray: 59.47540283203125;
+    stroke-dashoffset: 59.47540283203125;
+    animation: animationLetter 0.59s linear forwards 2.08s;
+}
+svg path:nth-child(4){
+    stroke-dasharray: 30.272701263427734;
+    stroke-dashoffset: 30.272701263427734;
+    animation: animationLetter 0.3s linear forwards 2.67s;
+}
+svg path:nth-child(5){
+    stroke-dasharray: 28.24267578125;
+    stroke-dashoffset: 28.24267578125;
+    visibility: hidden;
+    animation: animationPoint 0.28s linear forwards 2.97s;
+}
+svg path:nth-child(6){
+    stroke-dasharray: 68.96021270751953;
+    stroke-dashoffset: 68.96021270751953;
+    animation: animationLetter 0.69s linear forwards 3.25s;
+}*/
 
 @keyframes animationLetter {
     to {
         stroke-dashoffset: 0;
+    }
+}
+
+@keyframes animationPoint {
+    to {
+        visibility: visible; /* Rend l'élément à nouveau visible après 10 secondes */
     }
 }
