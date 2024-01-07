@@ -15,6 +15,7 @@ function Navigation(){
   const linkCompetencesRef = useRef(null);
   const linkRealisationsRef = useRef(null);
   const linkDevisRef = useRef(null);
+  const linkContactRef = useRef(null);
   const location = useLocation();
 
   function verificationLink(linkRef){
@@ -59,6 +60,7 @@ function Navigation(){
     verificationLink(linkCompetencesRef);
     verificationLink(linkRealisationsRef);
     verificationLink(linkDevisRef);
+    verificationLink(linkContactRef);
     if(window.innerWidth <= 700){
       contenantLiensNavigationsRef.current.style.top = "-18vh";
       contenantLiensNavigationsRef.current.style.animation = "";
@@ -119,7 +121,7 @@ function Navigation(){
           </DivNavPhone>
           <ContenantLiensNavigations ref={contenantLiensNavigationsRef}>
             <LienNavigation>
-              <Link ref={linkAccueilRef} to="/Accueil" style={styleLink}>Accueil</Link>
+              <Link ref={linkAccueilRef} to="/" style={styleLink}>Accueil</Link>
             </LienNavigation>
             <LienNavigation>
               <Link ref={linkCompetencesRef} to="/Competences" style={styleLink}>Competences</Link>
@@ -129,6 +131,9 @@ function Navigation(){
             </LienNavigation>
             <LienNavigation>
               <Link ref={linkDevisRef} to="/Devis" style={styleLink}>Devis</Link>
+            </LienNavigation>
+            <LienNavigation>
+              <Link ref={linkContactRef} to="/Contact" style={styleLink}>Contact</Link>
             </LienNavigation>
           </ContenantLiensNavigations>
         </Nav>

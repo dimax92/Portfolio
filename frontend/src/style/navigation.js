@@ -86,7 +86,7 @@ export const LienNavigation = styled.li`
 list-style-type: none;
 width: fit-content;
 // border: solid 1px;
-font-size: 4vw;
+font-size: 3.4vw;
 transform: perspective(1000px) rotateY(-40deg);
 transform-origin: 100% 50%;
 transition: transform 1000ms;
@@ -103,7 +103,7 @@ border: solid 0.2em transparent;
 
 @media (max-width: 700px){
     transform: none;
-    font-size: 3vw;
+    font-size: 2.19vh;
     width: 100%;
 }
 `

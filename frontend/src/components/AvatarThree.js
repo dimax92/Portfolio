@@ -18,7 +18,7 @@ function AvatarThree() {
          camera={{ position: [2, 0, 0], fov: 10 }}
          style={{
             backgroundColor: 'rgba(255, 0, 0, 0.0)',
-            width: '100vw',
+            width: '95vw',
             height: '100vw',
             maxHeight: maxHeight,
             // maxWidth: '60vh'
@@ -32,7 +32,6 @@ function AvatarThree() {
          <Suspense fallback={null}>
             <Model position={[0.025, -1.7, 0.0]} /> /* highlight-line */
          </Suspense>
-         <OrbitControls />
       </Canvas>
    );
 }

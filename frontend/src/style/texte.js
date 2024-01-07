@@ -14,6 +14,18 @@ export const GlobalStyle = createGlobalStyle`
     50% { color: transparent }
 }
 `
+
+export const DivTexte = styled.div`
+margin-top: 1vh;
+position: absolute;
+width: 100%;
+top: 82vh;
+min-height: 82vh;
+
+@media (max-width: 700px) {
+    top: 95vh;
+}
+`
 export const Paragraphe = styled.p`
 font-size: 1.4em;
 color: white;
@@ -25,6 +37,6 @@ font-family: 'Press Start 2P', cursive;
 `
 export const TraitUnion = styled.span`
 position: relative;
-left: -20px;
+left: -10px;
 font-weight: bold;
 `

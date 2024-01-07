@@ -13,6 +13,7 @@ import Navigation from './components/Navigation';
 import { DivApp } from './style/style';
 import Competences from './pages/Competences';
 import Realisations from './pages/Realisations';
+import Contact from './pages/Contact';
 
 function App() {
   return (
@@ -20,17 +21,18 @@ function App() {
       <Router>
         <Navigation />
         <Routes>
-          <Route path="/" element={<Home />}></Route>
+          <Route path="/Home" element={<Home />}></Route>
           <Route path="/Logo" element={<LogoPage />}></Route>
           <Route path="/ThreeScene" element={<ThreeScene />}></Route>
           <Route path="/AvatarThree" element={<AvatarThree />}></Route>
           <Route path="/Competence" element={<CylindreCompetences />}></Route>
           <Route path="/Projets" element={<Projets />}></Route>
 
-          <Route path='/Accueil' element={<Accueil />}></Route>
+          <Route path='/' element={<Accueil />}></Route>
           <Route path='/Competences' element={<Competences />}></Route>
           <Route path='/Realisations' element={<Realisations />}></Route>
           <Route path='/Devis' element={<Devis />}></Route>
+          <Route path='/Contact' element={<Contact />}></Route>
         </Routes>
       </Router>
     </DivApp>
