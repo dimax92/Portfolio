@@ -7,6 +7,7 @@ import axios from "axios"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faThumbsUp, faThumbsDown } from '@fortawesome/free-solid-svg-icons';
 
+
 function Devis(){
     const dispatch = useDispatch();
     const isFichier = useSelector((state)=>state.isFichier);
@@ -19,6 +20,7 @@ function Devis(){
     const iconMauvaiseReponseRef = useRef(null);
     const texteBonneReponseRef = useRef(null);
     const texteMauvaiseReponseRef = useRef(null);
+    const adresse = `${process.env.REACT_APP_ADRESSE_DEVIS}`;
     
     async function envoiDonnees(addresse){
         const formData = new FormData();
@@ -157,7 +159,7 @@ function Devis(){
                     onClick={
                         (e)=>{
                             e.preventDefault();
-                            envoiDonnees('http://localhost:3000')
+                            envoiDonnees(adresse)
                         }
                     }></BoutonNouveau>
                 {/* </div> */}

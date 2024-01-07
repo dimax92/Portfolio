@@ -4,6 +4,7 @@ const mysql = require('mysql');
 const multer = require('multer');
 const path = require('path');
 const app = express();
+require('dotenv').config();
 const PORT = process.env.PORT || 3000; // Définissez le port d'écoute
 
 app.use((req, res, next) => {
@@ -17,10 +18,10 @@ app.use((req, res, next) => {
 
 
 const connection = mysql.createConnection({
-  host: 'localhost', // adresse du serveur MySQL
-  user: 'root',
-  password: '',
-  database: 'webdimax'
+  host: `${process.env.DB_HOST}`, // adresse du serveur MySQL
+  user: `${process.env.DB_USER}`,
+  password: `${process.env.DB_PASSWORD}`,
+  database: `${process.env.DB_DATABASE}`
 });
 
 // Établir la connexion
